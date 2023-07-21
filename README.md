@@ -15,7 +15,9 @@ Probabilities of injury and bias level classes were used as features.
 
 ## Other Features Added
 time_lag: the time difference between the accident and the report of the claim
+
 claim_projected: claims projected by a constant factor to initial claims (accident years were tried but not performing)
+
 other date/time elements of accidents such as hour, month of the accident date etc.
 
 ## Data Pre-processing / Cleansing
