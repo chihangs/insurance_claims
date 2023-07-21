@@ -13,6 +13,8 @@ Workers compensation ultimate claim payments are often a certain multiple of wee
 Another feature to account for bias was created. Different types of claims may induce different levels of bias. As the bias can be extremely large due to its exponential distribution (see Actuarial_explore.ipynb), we compute the difference of log instead, which is equivalent to log of ratio.  Bias was categorised by K-Means clustering, then learnt by Fasttext NLP model, which was used to create bias levels for feature engineering.
 Probabilities of injury and bias level classes were used as features.
 
+Outcome: one of these features became top 1 or 2 important features among different models.
+
 ## Other Features Added
 time_lag: the time difference between the accident and the report of the claim
 
