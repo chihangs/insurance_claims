@@ -18,7 +18,7 @@ time_lag: the time difference between the accident and the report of the claim
 
 claim_projected: claims projected by a constant factor to initial claims (accident years were tried but not performing)
 
-other date/time elements of accidents such as hour, month of the accident date etc.
+Other date/time elements of accidents such as hour, month of the accident date etc. Re-formatting for date/time.
 
 ## Data Pre-processing / Cleansing
 Missing data in categories were treated as a separated category for machine learning models to learn by itself (also because quite different distribution was observed). This approach is not suitable for all situations, but should work for this context, especially with test data given (though without labels) and similar distribution was observed. The largest claim in training data was identified as an outlier (far larger than other top 10) and removed.
