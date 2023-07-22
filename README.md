@@ -1,9 +1,11 @@
 # Score between top 5 & 6 in Kaggle
 
 ## Background
-This Python notebook combines NLP, machine learning and actuarial methods/knowledge to predict the workers compensation insurance claims, see data source: https://www.kaggle.com/competitions/actuarial-loss-estimation/overview
-It was a competition held by the Actuaries Institute of Australia, Institute and Faculty of Actuaries and the Singapore Actuarial Society.
-My motivation is to use my actuarial and machine learning skills to see how my results compare with winners, though the competition was concluded 2 years ago. The best private score was between top 5 and 6 - you may submit my predictions to Kaggle for verification (yes, your 'late' submission will be scored, but not ranked or disclosed publicly).
+This Python notebook combines NLP, machine learning and actuarial methods/knowledge to predict the workers compensation insurance claims. It was a competition held by the Actuaries Institute of Australia, Institute and Faculty of Actuaries and the Singapore Actuarial Society. My motivation is to use my actuarial and machine learning skills to see how my results compare with winners, though the competition was concluded 2 years ago. The best private score was between top 5 and 6 - you may submit my predictions to Kaggle for verification (yes, your 'late' submission will be scored, but not ranked or disclosed publicly).
+
+## Data
+Source: https://www.kaggle.com/competitions/actuarial-loss-estimation
+The competition organiser claimed that the data were highly realistic synthetic, not specific to to any legal jurisdiction or country. I guess the data were modified from real data (perhaps some public data?) with noises added from certain probabilistic models. At least I don't believe the claims description was completey manually created. And I tend to believe it to be originated from certain jurisdiction(s) instead (and so normally it should have some trends).
 
 ## Models
 I thought gamma distribution might be relevant for choosing model objective, as it is widely used by actuaries to model claims. Data exploration also showed that claims distribution looked like exponential/gama family. Yet, it turned out that it was not a good fit for machine learning objective. Results speak louder than assumptions. Based on my previous experience, for tabular data, neural networks are not as good as tree-based ensemble methods. So I focused on lightgbm and xgboost, with Bayesian search of hyperparamter tuning by 2 tools: sklearn/skopt and Optuna. Yet, one data field is unstructured - the claims description. I used NLP model by Fasttext to deal with this part (see below). 
