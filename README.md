@@ -31,6 +31,6 @@ Missing data in categories were treated as a separate category for machine learn
 Other NLP models may be used to tune better, but it might take a few days more from my experience of a few different NLP models, which can be computation intensive. More feature engineering can be explored, such as using the level of prediction (e.g. small or large predicted claim) to differentiate bias levels. When the most important feature (initial claim incurred) is too small, it tends to lose predictability and perhaps models specific to this may be explored or added. Meta learning may be applied to combine different models. As gradient boosting tree methods learn by residuals iteratively, a small portion of predictions may become negative. It was manually corrected (though just small performance change and it didn't affect the 'rank') and could be done more systematically. And tune more for the machine learning models. As I am not really in the competition, I would not spend these efforts further as the score looked pretty already.
 
 ## Note
-To avoid re-training of NLP, download and unzip the NLP models in 'Releases'.
+To avoid re-training of NLP, download and unzip the NLP models in 'Releases'. https://github.com/chihangs/insurance_claims/releases
 
 
