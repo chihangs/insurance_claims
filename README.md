@@ -1,7 +1,7 @@
 # Score between top 5 & 6 in Kaggle
 
 ## Background
-This Python notebook combines NLP, machine learning and actuarial methods/knowledge to predict the workers compensation insurance claims. It was a competition held by the Actuaries Institute of Australia, Institute and Faculty of Actuaries and the Singapore Actuarial Society. My motivation is to use my actuarial and machine learning skills to see how my results compare with winners, though the competition was concluded 2 years ago. The best private score was between top 5 and 6 - you may submit my predictions to Kaggle for verification (yes, your 'late' submission will be scored, but not ranked or disclosed publicly).
+This Python notebook combines NLP, machine learning and actuarial methods/knowledge to predict the workers compensation insurance claims. It was a competition held by the Actuaries Institute of Australia, Institute and Faculty of Actuaries and the Singapore Actuarial Society. My motivation is to use my actuarial and machine learning skills to see how my results compare with winners, though the competition was concluded 2 years ago. The best private score was between top 5 and 6 - you may submit predictions submit_10x.csv to Kaggle for verification (yes, your 'late' submission will be scored, but not ranked or disclosed publicly).
 
 ## Data
 Source: https://www.kaggle.com/competitions/actuarial-loss-estimation
